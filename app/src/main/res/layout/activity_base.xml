@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yujinlong.note.ui.widge.ResizeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/appContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@+id/rlNavigationBar" />
+
+    <RelativeLayout
+        android:id="@+id/rlNavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-14dp">
+
+        <FrameLayout
+            android:id="@+id/flNavigationBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.yujinlong.note.ui.widge.NavigationBar
+                android:id="@+id/navigationBar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_tab_height" />
+
+            <com.yujinlong.note.ui.widge.NavigationBar_TextButton
+                android:id="@+id/navigationBar_TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_tab_height"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/lineNavigationBar"
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:layout_below="@+id/flNavigationBar"
+            android:background="@drawable/toolbar_dropshadow" />
+
+    </RelativeLayout>
+
+
+</com.yujinlong.note.ui.widge.ResizeRelativeLayout>
