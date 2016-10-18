@@ -1,5 +1,7 @@
 package com.yujinlong.note.ui.activity;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -7,8 +9,6 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.nineoldandroids.animation.AnimatorSet;
-import com.nineoldandroids.animation.ObjectAnimator;
 import com.yujinlong.note.R;
 import com.yujinlong.note.utils.DensityUtils;
 
@@ -52,7 +52,7 @@ public class SplashActivity extends BaseActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                gotoActivity(new Intent(SplashActivity.this, MainActivity.class));
+                gotoActivity(new Intent(SplashActivity.this, LoginActivity.class));
             }
         }, 4000);
     }

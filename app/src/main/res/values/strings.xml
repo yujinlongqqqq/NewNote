@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">加密日记本</string>
+
+    <!-- 分享 -->
+    <string name="share">分享</string>
+    <string name="share_title">分享到</string>
+    <string name="moments">朋友圈</string>
+    <string name="wechat">微信好友</string>
+    <string name="weibo">新浪微博</string>
+    <string name="qq">QQ</string>
+    <string name="qzone">QQ空间</string>
+
+    <!-- button -->
+    <string name="horizontal_single">横向单行</string>
+    <string name="horizontal_multi">横向多行</string>
+    <string name="vertical">竖向</string>
+    <string name="grid">网格</string>
+
+    <!-- item -->
+    <string name="delete">删除</string>
+    <string name="add_item">添加</string>
+    <string name="source_on_github">Github位置</string>
+    <string name="title_item">功能</string>
+    <string name="title_activity_login">登录</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
 </resources>
