@@ -63,6 +63,10 @@ public class BaseActivity extends AppCompatActivity {
             m_navigationBar.setVisibility(View.VISIBLE);
         }
 
+        setStatusBar();
+    }
+
+    protected void setStatusBar(){
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             setTranslucentStatus(true);
             SystemBarTintManager tintManager = new SystemBarTintManager(this);
@@ -71,7 +75,7 @@ public class BaseActivity extends AppCompatActivity {
         }
     }
 
-    private void setTranslucentStatus(boolean on) {
+    protected void setTranslucentStatus(boolean on) {
         Window win = getWindow();
         WindowManager.LayoutParams winParams = win.getAttributes();
         final int bits = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;

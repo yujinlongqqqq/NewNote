@@ -83,4 +83,10 @@
         <item name="android:windowExitAnimation">@anim/slide_down</item>
     </style>
 
+    <!--高斯模糊对话框-->
+    <style name="BlurDialogFragment.Default.Animation" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/default_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/default_dialog_out</item>
+    </style>
+
 </resources>
