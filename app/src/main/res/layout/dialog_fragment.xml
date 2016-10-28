@@ -1,16 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="http://www.baidu.com"
-        android:id="@+id/textView"
-        android:gravity="center"
-        android:padding="10dp"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-</RelativeLayout>
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="toCheck"
+        android:padding="10dp"
+        android:text="@string/checkUpdate" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@color/titleTextColor"
+        android:clickable="true"
+        android:onClick="onEmpty"
+        android:padding="10dp"
+        android:text="空数据" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:clickable="true"
+        android:onClick="onError"
+        android:padding="10dp"
+        android:text="加载错误" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@color/uiPrimaryColor"
+        android:clickable="true"
+        android:onClick="onLoading"
+        android:padding="10dp"
+        android:text="加载中" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:background="@color/uiPrimaryColor"
+        android:clickable="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="onDone"
+        android:padding="10dp"
+        android:text="完成" />
+</LinearLayout>

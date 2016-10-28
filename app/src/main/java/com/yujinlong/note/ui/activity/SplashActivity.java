@@ -12,6 +12,8 @@ import android.widget.TextView;
 import com.yujinlong.note.R;
 import com.yujinlong.note.utils.DensityUtils;
 
+import cn.bmob.v3.Bmob;
+
 public class SplashActivity extends BaseActivity {
     private ImageView icon;
     private TextView textView;
@@ -22,6 +24,9 @@ public class SplashActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        //第一：默认初始化
+        Bmob.initialize(this, "eb80e65b5ab104d0dda41157f8af1809");
+
         icon = (ImageView) findViewById(R.id.icons);
         textView = (TextView) findViewById(R.id.textview);
         width = DensityUtils.getWindowWidth(context);

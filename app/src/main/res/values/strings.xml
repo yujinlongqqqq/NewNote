@@ -38,4 +38,5 @@
 
     <string name="userName">用户名</string>
     <string name="passWord">密码</string>
+    <string name="checkUpdate">检查更新</string>
 </resources>

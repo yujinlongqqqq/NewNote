@@ -3,4 +3,5 @@
     <string name="app_name">加密日记本</string>
     <string name="userName">用户名</string>
     <string name="passWord">密码</string>
+    <string name="checkUpdate">检查更新</string>
 </resources>

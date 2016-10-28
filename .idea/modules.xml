@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/NewNote.iml" filepath="$PROJECT_DIR$/NewNote.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smart-loading-layout/smart-loading-layout.iml" filepath="$PROJECT_DIR$/smart-loading-layout/smart-loading-layout.iml" />
     </modules>
   </component>
 </project>
