@@ -5,7 +5,6 @@ import android.text.Selection;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -34,7 +33,7 @@ public class LoginActivity extends BaseSwipeBackActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);//去掉信息栏
+//        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);//去掉信息栏
         setContentView(R.layout.activity_login);
 
 
@@ -86,10 +85,10 @@ public class LoginActivity extends BaseSwipeBackActivity {
 //        startActivity(new Intent(this, MainActivity.class));
     }
 
-    @Override
-    protected void setStatusBar() {
-
-    }
+//    @Override
+//    protected void setStatusBar() {
+//
+//    }
 
     public void toCheck(View view) {
         BmobUpdateAgent.initAppVersion();

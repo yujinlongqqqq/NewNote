@@ -10,6 +10,7 @@ android {
         targetSdkVersion 22
         renderscriptTargetApi 22
         renderscriptSupportModeEnabled true
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
     }
@@ -20,6 +21,18 @@ android {
         }
     }
     productFlavors {
+    }
+
+    afterEvaluate {
+        tasks.matching {
+            it.name.startsWith('dex')
+        }.each { dx ->
+            if (dx.additionalParameters == null) {
+                dx.additionalParameters = ['--multi-dex']
+            } else {
+                dx.additionalParameters += '--multi-dex'
+            }
+        }
     }
 }
 
